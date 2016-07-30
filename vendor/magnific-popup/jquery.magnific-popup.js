@@ -1132,7 +1132,9 @@ $.magnificPopup.registerModule('image', {
 		markup: '<div class="mfp-figure">'+
 					'<div class="mfp-close"></div>'+
 					'<figure>'+
+					'<a  href="tsunami/tsunamis.html">' +
 						'<div class="mfp-img"></div>'+
+					'</a>' +
 						'<figcaption>'+
 							'<div class="mfp-bottom-bar">'+
 								'<div class="mfp-title"></div>'+
