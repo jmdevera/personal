@@ -1132,8 +1132,7 @@ $.magnificPopup.registerModule('image', {
 		markup: '<div class="mfp-figure">'+
 					'<div class="mfp-close"></div>'+
 					'<figure>'+
-					'<a  href="tsunami/tsunamis.html">' +
-						'<div class="mfp-img"></div>'+
+					'<div class="mfp-img"></div>'+
 					'</a>' +
 						'<figcaption>'+
 							'<div class="mfp-bottom-bar">'+
@@ -1144,7 +1143,9 @@ $.magnificPopup.registerModule('image', {
 					'</figure>'+
 				'</div>',
 		cursor: 'mfp-zoom-out-cur',
-		titleSrc: 'title',
+		titleSrc: function(item) {
+				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+			},
 		verticalFit: true,
 		tError: '<a href="%url%">The image</a> could not be loaded.'
 	},
@@ -1300,6 +1301,7 @@ $.magnificPopup.registerModule('image', {
 
 			var el = template.find('.mfp-img');
 			if(el.length) {
+				var ref = document.createElement('a');
 				var img = document.createElement('img');
 				img.className = 'mfp-img';
 				if(item.el && item.el.find('img').length) {
