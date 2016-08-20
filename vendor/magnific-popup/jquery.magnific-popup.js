@@ -1144,7 +1144,7 @@ $.magnificPopup.registerModule('image', {
 				'</div>',
 		cursor: 'mfp-zoom-out-cur',
 		titleSrc: function(item) {
-				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+				return ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">View Project</a>';
 			},
 		verticalFit: true,
 		tError: '<a href="%url%">The image</a> could not be loaded.'
