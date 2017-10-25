@@ -21,17 +21,11 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!--<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">-->
 
     <!-- Theme CSS -->
     <link href="css/creative.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -71,7 +65,7 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Martin Devera</h1>
                 <hr>
-                <p>Welcome to my website! </p>
+                <p>Welcome to my website </p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">About me</a>
             </div>
         </div>
@@ -83,7 +77,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Hi there! </h2>
                     <hr class="light">
-                    <p class="text-faded">I'm a recent graduate of UW with a BA in Earth and Space Science, and a minor Computer Software Systems and Engineering. This Site was built on bootstrap, on top of an Amazon Webserver I configured. Below are some of the projects I've been working on.</p>
+                    <p class="text-faded">I graduated in August 2017 from the University of Washington earning a Bachelor of Arts in Earth and Space Science and a minor in Computer Science and Software Engineering. I have a great interest in the environment, technology, and data. I worked as a Student Technology Assistant for the Communications Department at UW from May 2015 to June 2017. In September 2016 I earned Associate Level Certification as an AWS Solutions Architect. Below are some of the projects I've been working on.</p>
                     <a href="#portfolio" class="page-scroll btn btn-default btn-xl sr-button">Projects</a>
                 </div>
             </div>
@@ -93,8 +87,91 @@
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
+			
+			
 				<div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" data-source="https://jmdevera.github.io/i467Studios" class="portfolio-box" >
+                    <a href="http://students.washington.edu/jmdevera/FinalProject/start.php" class="portfolio-box" target = "blank">
+                        <img src="img/portfolio/thumbnails/4.jpg"  class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Web Development with PHP and D3.
+                                </div>
+                                <div class="project-name">
+                                    Uses PHP to store cookies, login, and data about a user's todo list. Todo list weights tasks with points based on due date, importance, and personal gratification of performing the task. Creates a data visualization of the points accumulated after completing tasks. Future work includes creating a game to spend the accumulated points.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+				              
+				<div class="col-lg-4 col-sm-6">
+                    <a href="/Goldfinch_Habitat_Devera.pdf" class="portfolio-box" target = "blank">
+                        <img src="img/portfolio/thumbnails/gis.png"  class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    GIS - Goldfinch Breeding Grounds in Oregon
+                                </div>
+                                <div class="project-name">
+                                   Used GIS to generate maps of the American Goldfinch's breeding grounds. Performed different analyses including boolean raster manipulations to find relationships and patterns such as proximity to highways, certain vegetation, and streams.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+				
+				<div class="col-lg-4 col-sm-6">
+                    <a href="https://github.com/TheSims5/FinalProject" class="portfolio-box" target = "blank">
+                        <img src="img/portfolio/thumbnails/sim.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Computer Simulation of Epidemic Modeling in Python
+                                </div>
+                                <div class="project-name">
+                                    Led a team to research, design, develop, and present a computer simulation of an epidemic spreading across a school campus based on their class schedule and campus layout. Used agent-based modeling with discrete-space scheduled walkers. Developed in Python. 
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+				
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://jmdevera.github.io/tsunamis/" class="portfolio-box" target = "blank">>
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive"  alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Interactive Tsunami History Visualization
+                                </div>
+                                <div class="project-name">
+                                    Uses the D3.js framework to display data about tsunami's around the world. Has adjustable sliders to interactively select a subset of the data based on year, earthquake magnitude, and cause of tsunami.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+				
+                <div class="col-lg-4 col-sm-6">
+                    <a href="https://huskywushu.com" class="portfolio-box" target = "blank">>
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive"  alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Huky Wushu Team - Web Development
+                                </div>
+                                <div class="project-name">
+                                    Led a team to update the website for the Husky Wushu Team. Created a responsive, mobile friendly UI using Bootstrap. Used PHP to create contact messages in-site.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+				<div class="col-lg-4 col-sm-6">
+                    <a href="https://jmdevera.github.io/i467Studios" class="portfolio-box" target = "blank">>
                         <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -108,88 +185,14 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" data-source="https://huskywushu.com" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive"  alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Web Development
-                                </div>
-                                <div class="project-name">
-                                    Husky Wushu Team Website
-                                </div>
-								<div class="get-me" style="display: none;">
-									"tsunami/tsunamis.html"
-								</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" data-source="https://jmdevera.github.io/tsunamis/" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive"  alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Data Visualization
-                                </div>
-                                <div class="project-name">
-                                    Tsunamis Worldwide Visualization with D3
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.jpg" data-source="http://students.washington.edu/jmdevera/FinalProject/start.php" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/4.jpg"  class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Web Development with PHP
-                                </div>
-                                <div class="project-name">
-                                    ToDo List
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/5.jpg" data-source="https://jmdeverablog.wordpress.com" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/5.jpg"  class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Blog
-                                </div>
-                                <div class="project-name">
-                                   My WordPress Blog
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/6.jpg" data-source="https://drive.google.com/open?id=1xIg123o_52VTwISWi1HlUkEfQbeuutWZAW5SRBWxOcc" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Mobile OS Design
-                                </div>
-                                <div class="project-name">
-                                    Hunny Slide Deck
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+
             </div>
         </div>
     </section>
-
+	
+	<!-- python pane
+	<iframe src="https://trinket.io/embed/python/b9b4074bb7" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+-->
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -200,7 +203,7 @@
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@jmdevera@uw.edu">jmdevera@uw.edu</a></p>
+                    <p><a href="mailto:jmdevera21@gmail.com">jmdevera21@gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -215,7 +218,7 @@
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+    <!--<script src="vendor/magnific-popup/jquery.magnific-popup.js"></script> -->
 
     <!-- Theme JavaScript -->
     <script src="js/creative.js"></script>
